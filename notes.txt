@@ -1,0 +1,13 @@
+1. using [] when naming a folder, makes it the dynamic part of the url
+
+2. to retrieve the dynamic part of the url inside the .tsx file just define a param inside the function and call that param inside the returned div
+
+3. to create a folder thats not a rout, wrap the name of the folder inside (). This is useful when we are creating componets linked by a common thread, so we want to organize them without making the container folder a route
+
+4. folders inside the hidden folder can still be routes, and when creating a layout.tsx file inside a foldeer, all pages inside that folder will take on that layout. In the layout file declaration you shoukld always destructure its children (of type React.ReactNode) so that everypage will be different but using the same layout
+
+5. Layout is useful for loading different components and applyiing them to all the pages that layout controls 
+
+6. To completly exclude the routes of a folder, you rename the folder with _ in front. 
+
+7. Only page.tsx and layout.tsx have the "export default", every other file has export const NameOfFile = () => {}
